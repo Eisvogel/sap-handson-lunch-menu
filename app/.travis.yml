@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - 10
+
+branches:
+  only:
+    - master
+    - staging
+
+before_deploy:
+  - ./scripts/configure-mta-builder.sh
+  - ./scripts/configure-neo-sdk.sh
+
+deploy:
+  - provider: script
+    script: bash scripts/deploy.sh
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: script
+    script: bash scripts/deploy.sh
+    skip_cleanup: true
+    on:
+      branch: staging

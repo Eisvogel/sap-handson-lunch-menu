@@ -1,0 +1,25 @@
+<article id="page-ingredients">
+	
+	<section class="meal">
+		<header>Your Meal</header>
+		<span>"{{ meal.replace(/^./, a=>a.toUpperCase()) }}"</span>
+	</section>
+	
+	<section class="ingredients">
+		<header>Ingredients</header>
+		
+		<div v-for="ingredient in ingredients" class="ingredient">
+			<img src="ingredient.image">
+			{{ ingredient.text }}
+		</div>
+	
+	</section>
+	
+	<section class="read">
+		<Button @click="onReadAloud">
+			Read Aloud
+			<SAPIcon src="sap-icon://media-play"/>
+		</Button>
+	</section>
+
+</article>

@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+$font-path: '~@/assets/fonts/72/';
+$fonts-list: (
+				('72-Light', 100, normal),
+				('72-Regular', 400, normal),
+				('72-Bold', 700, normal),
+				('72-Black', 900, normal)
+);
+
+@each $current-font, $current-weight, $current-style in $fonts-list {
+	@font-face {
+		font-family: '72';
+		font-weight: $current-weight;
+		font-style: $current-style;
+		src: url($font-path + $current-font + '.eot');
+		src: url($font-path + $current-font + '.eot?#iefix') format('embedded-opentype'),
+		url($font-path + $current-font + '.woff2') format('woff2'),
+		url($font-path + $current-font + '.woff') format('woff'),
+		url($font-path + $current-font + '.ttf') format('font-truetype'),
+		url($font-path + $current-font + '.svg') format('svg');
+	}
+}

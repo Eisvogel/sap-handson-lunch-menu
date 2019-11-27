@@ -1,0 +1,48 @@
+#app {
+	position: relative;
+	
+	display: flex;
+	flex-direction: column;
+	
+	> header {
+		height: 3rem;
+		
+		background-color: black;
+		color: white;
+		
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		
+		position: relative;
+		
+		> a {
+			width: 2rem;
+			height: 2rem;
+			
+			position: absolute;
+			left: 1rem;
+			top: 50%;
+			margin-top: -1rem;
+			
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+			color:white;
+			
+			cursor: pointer;
+			
+			&:hover {
+				border-radius: 0.25rem;
+				background-color: gray;
+			}
+		}
+	}
+}
+
+
+.app-content {
+	flex: 1 1 auto;
+}

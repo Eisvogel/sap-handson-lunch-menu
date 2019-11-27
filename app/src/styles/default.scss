@@ -1,0 +1,45 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+html, body {
+	height: 100%;
+}
+
+
+html, body, table {
+	font-family: "72", Helvetica, Arial, sans-serif;
+}
+
+
+html {
+	font-size: 16px;
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	
+	> * {
+		flex-grow: 1;
+	}
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+button {
+	cursor: pointer;
+}
+
+
+label {
+	cursor: inherit;
+}

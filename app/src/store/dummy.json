@@ -1,0 +1,26 @@
+{
+	"language": "English",
+	"meal": "Bolognese",
+	"ingredients": [
+		{
+			"image": "https://dummy",
+			"text": "Some fancy ingredient 1"
+		},
+		{
+			"image": "https://dummy",
+			"text": "Some fancy ingredient 2"
+		},
+		{
+			"image": "https://dummy",
+			"text": "Some fancy ingredient 3"
+		},
+		{
+			"image": "https://dummy",
+			"text": "Some fancy ingredient 4"
+		},
+		{
+			"image": "https://dummy",
+			"text": "Some fancy ingredient 5"
+		}
+	]
+}
