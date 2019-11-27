@@ -28,7 +28,8 @@ export default {
 	methods: {
 		onGetIngredients() {
 			this.captureImage();
-			this.$router.push({name: 'ingredients', params: {meal: this.detectedMeal}});
+			this.$store.dispatch('classify');
+			// this.$router.push({name: 'ingredients', params: {meal: this.detectedMeal}});
 		},
 		
 		

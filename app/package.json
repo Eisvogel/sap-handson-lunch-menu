@@ -21,10 +21,12 @@
 		"@vue/cli-plugin-babel": "^3.11.0",
 		"@vue/cli-plugin-eslint": "^3.11.0",
 		"@vue/cli-service": "^3.11.0",
+		"azure-cognitiveservices-entitysearch": "^2.0.0",
 		"babel-eslint": "^10.0.1",
 		"eslint": "^5.16.0",
 		"eslint-plugin-vue": "^5.0.0",
 		"fastest-stable-stringify": "^2.0.2",
+		"ms-rest-azure": "^3.0.0",
 		"node-sass": "^4.9.0",
 		"sass-loader": "^7.1.0",
 		"vue-template-compiler": "^2.6.10"

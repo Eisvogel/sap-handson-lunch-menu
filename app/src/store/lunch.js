@@ -39,5 +39,11 @@ export default {
 	},
 	
 	
-	actions: {}
+	actions: {
+		
+		async classify({state}) {
+			await api.classifyImage({imageDataUrl: state.image});
+		}
+		
+	}
 }
