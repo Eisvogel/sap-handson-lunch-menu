@@ -17,7 +17,8 @@ export default {
 	
 	computed: {
 		...mapState({
-			ingredients: $ => $.lunch.ingredients
+			image: $ => $.lunch.image || null,
+			ingredients: $ => $.lunch.ingredients,
 		})
 	},
 	

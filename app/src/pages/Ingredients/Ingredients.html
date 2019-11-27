@@ -3,6 +3,7 @@
 	<section class="meal">
 		<header>Your Meal</header>
 		<span>"{{ meal.replace(/^./, a=>a.toUpperCase()) }}"</span>
+		<img :src="image" v-if="image">
 	</section>
 	
 	<section class="ingredients">
